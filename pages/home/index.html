@@ -8,10 +8,71 @@
     <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
     <meta name="description" content="Control Finance - Seu controle financeiro">
     <link rel="stylesheet" href="/styles/globalStyles.css">
+    <link rel="stylesheet" href="/styles/componentes.css">
+    <link rel="stylesheet" href="/styles/modal.css">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <main id="app"></main>
+    <!-- <div id="modal" class="modal">
+       <div class="caixaModal">
+         <h2 >Registro de Valor</h2>
+        <p>
+            Digite o valor e em seguida aperte no botão referente ao tipo do valor
+        </p>
+        <h3>Valor</h3>
+           <input type="number" inputmode="numeric">
+        <div class="divButModal">
+        <p>Tipo de valor</p>
+        <button class=butSelect>Entradas</button>
+        <button class=butSelect>Saídas</button>
+        </div>
+        <div class="cancelarInserir">
+        <button class="tag2">Cancelar</button>
+        <button class="registrarValor">inserir valor</button>
+       </div>  
+    </div> -->
+    <header class="header">
+        <div>
+            <span class="logo logo1">Control</span><span class="logo logo2">Finance</span>
+        </div>
+        <button class="registrarValor">Registrar novo valor</button>
+    </header>
+    <main id="app" class="container">
+        <div class="nav">
+            <div class="divPresumo">
+            <p class="pResumo">Resumo financeiro</p>
+            </div>
+            <div>
+            <button class=butSelect>Todos</button>
+            <button class=butSelect>Entradas</button>
+            <button class=butSelect>Saídas</button>
+            </div>
+        </div>    
+      <div class="somaValores">
+        <p>Soma dos valores</p> <span>R$:12345</span>
+      </div>
+      <ul>
+        <li class="card">
+            <div>R$:4454</div>
+             <div><span class="tag">Entrada</span><button class="lixeira"><img src="/assets/trash.png" alt=""></button></div>
+            </li>
+
+            <li class="card">
+                <div>R$:4454</div>
+                 <div><span class="tag">Entrada</span><button class="lixeira"><img src="/assets/trash.png" alt=""></button></div>
+                </li>
+
+                <li class="card">
+                    <div>R$:4454</div>
+                     <div><span class="tag">Entrada</span><button class="lixeira"><img src="/assets/trash.png" alt=""></button></div>
+                    </li>
+
+                    <li class="card">
+                        <div>R$:4454</div>
+                         <div><span class="tag">Entrada</span><button class="lixeira"><img src="/assets/trash.png" alt=""></button></div>
+                        </li>
+      </ul>
+    </main>
     <script src="/scripts/modal.js"></script>
     <script src="valuesData.js"></script>
     <script src="index.js"></script>

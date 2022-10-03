@@ -1,0 +1,44 @@
+.tag{
+
+    border: none;
+    border-radius:4px;
+    Padding:5px 10px;
+    Gap:10px;
+    background-color: var(--color-grey-4);
+    color: var(--color-grey-1);
+    }
+
+    
+    .lixeira{
+    
+        background-color:white;
+        border: none;
+        margin-left: 10px;
+        border: 2px solid var(--color-grey-4);
+        padding: 2px 5px;
+        
+    }
+
+    .registrarValor{
+        width: 156px;
+        height: 30px;
+        padding: 7.5px 14px;
+        text-align: center;
+        border-radius: var(--radius-2);
+        font-family: var(--font-family-1);
+        border: none;
+        background-color: var(--color-brand-1);
+        color: var(--fixed-white);
+    }
+
+    .butSelect{
+        height: 32px;
+        padding: 0 14px;
+        text-align: center;
+        border-radius: var(--radius-2);
+        font-family: var(--font-family-1);
+        border:2px solid var(--color-grey-3);
+        background-color: var(--fixed-white);
+        color: var(--color-grey-1);
+        margin-left: 15px;
+    }
