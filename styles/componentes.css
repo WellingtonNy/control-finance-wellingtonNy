@@ -42,3 +42,30 @@
         color: var(--color-grey-1);
         margin-left: 15px;
     }
+
+    .closeModal{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35px;
+      height: 35px;
+border-radius: 4px;
+font-size: 25px;
+Padding:4px 12px;
+border: none;
+    }
+
+    .IMD{
+        margin-top: 10px;
+         padding: 10px;
+        width: 100%;
+        border-radius: 4px;
+
+    }
+
+    .BCMD{
+        font-weight: 500;
+        background-color: var(--color-grey-4);
+    }
+
+    
