@@ -6,6 +6,7 @@ let lidiv2= document.createElement('div')
 let lispan= document.createElement('span')
 let libot= document.createElement('button')
 let liimg= document.createElement('img')
+libot.addEventListener('click',(event)=>apagarCard(event,objeto.id))
 
 li.classList= 'card'
 lispan.classList='tag'
@@ -18,7 +19,7 @@ if (objeto.categoryID === 1) {
 lispan.innerText= 'Entrada'
 }
 liimg.src="/assets/trash.png"
-
+liimg.id=objeto.id
 
 
 li.append(lidiv, lidiv2)
@@ -27,16 +28,21 @@ libot.append(liimg)
 
 return li
 }
-
-function criador(elemento) {
-   let ul = document.querySelector('ul')
-let li = criarCard(elemento)
- ul.appendChild(li)
+/////////////////////////////////
+function apagarCard(event,id){
+event.preventDefault()
+const arr =insertedValues.filter((element)=>{ 
+  return element.id !== id})
+  insertedValues = arr
+listarCard(insertedValues)
 }
 
-function gerador(arr) {
-    for (let i = 0; i < arr.length; i++) {
-        criador(arr[i])    
-    }  
+
+function listarCard(array) {
+    const ul = document.querySelector('ul')
+    ul.innerText=''
+     array.forEach(element => {
+        ul.appendChild(criarCard(element))
+    });
 }
-gerador(insertedValues)
+listarCard(insertedValues)
